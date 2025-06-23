@@ -24,7 +24,7 @@ nav a {
 
 /* 🔵 Hover effect: change color */
 nav a:hover {
-  color: #ffcc00;           /* gold/yellow hover color */
+  color: #00c2ff;           
   background-color: #003366; /* optional background on hover */
 }
 
