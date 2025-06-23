@@ -6,12 +6,28 @@ body {
   color: #333;
 }
 
-header {
-  background: #004b8d;
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.toggle-btn {
+  background: white;
+  color: #004b8d;
+  border: none;
+  font-size: 1.2rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #ffcc00;
+  color: black;
+}
+
 
 nav a {
   margin: 0 15px;
