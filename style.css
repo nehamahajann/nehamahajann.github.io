@@ -1,6 +1,50 @@
-head{
-        .person-name{
-            color: red;
-        }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
 
+header {
+  background: #004b8d;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: #004b8d;
+}
+
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+a {
+  color: #004b8d;
 }
