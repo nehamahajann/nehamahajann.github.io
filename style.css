@@ -17,7 +17,17 @@ nav a {
   margin: 0 15px;
   color: white;
   text-decoration: none;
+  padding: 5px 8px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 4px;
 }
+
+nav a:hover {
+  background-color: white;
+  color: #004b8d;
+  text-decoration: none;
+}
+
 
 main {
   max-width: 900px;
