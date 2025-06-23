@@ -18,15 +18,16 @@ nav a {
   color: white;
   text-decoration: none;
   padding: 5px 8px;
-  transition: background 0.3s, color 0.3s;
+  transition: color 0.3s ease, background-color 0.3s ease;
   border-radius: 4px;
 }
 
+/* 🔵 Hover effect: change color */
 nav a:hover {
-  background-color: white;
-  color: #004b8d;
-  text-decoration: none;
+  color: #ffcc00;           /* gold/yellow hover color */
+  background-color: #003366; /* optional background on hover */
 }
+
 
 
 main {
