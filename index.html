@@ -5,74 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Neha Mahajan | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <div class="header-top">
-    <h1>Neha Mahajan</h1>
-    <button onclick="toggleTheme()" class="toggle-btn">🌓</button>
-  </div>
-  <p>Ex-Infosys | Master of IT Student @ UTS Sydney | Aspiring Python & Full-Stack Developer</p>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Neha Mahajan</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button onclick="toggleTheme()" class="toggle-btn">🌓</button>
+      </nav>
+    </div>
+  </header>
 
+  <section class="hero">
+    <div class="container">
+      <h2>Hello, I'm <span class="highlight">Neha</span></h2>
+      <h3><span id="typed"></span></h3>
+      <a href="Neha_Mahajan_Resume.pdf" download class="btn">📄 Download Resume</a>
+    </div>
+  </section>
 
-  <main>
-    <section id="about">
+  <section id="about" class="section">
+    <div class="container">
       <h2>About Me</h2>
-      <p>Hello! I'm Neha, currently pursuing a Master’s in Information Technology at the University of Technology Sydney (UTS). With prior experience at Infosys, I’m passionate about building scalable software, full-stack apps, and exploring AI/ML technologies.</p>
-    </section>
+      <p>I’m a former Infosys professional and a Master of IT student at UTS Sydney, passionate about Python, full-stack development, and AI/ML. I love building creative and meaningful digital solutions.</p>
+    </div>
+  </section>
 
-    <section id="skills">
+  <section id="skills" class="section">
+    <div class="container">
       <h2>Skills</h2>
-      <ul>
-        <li>Languages: Python, Java, C#</li>
-        <li>Web: HTML, CSS, JavaScript, React</li>
-        <li>Backend: Flask, Node.js (basic)</li>
-        <li>Tools: Git, GitHub, VS Code</li>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Flask</li>
+        <li>Git & GitHub</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects">
+  <section id="projects" class="section">
+    <div class="container">
       <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>UniSystemCLI:</strong> A Python CLI for student-course management.<br/>
-          <a href="https://github.com/nehamahajann/UniSystemCLI" target="_blank">View on GitHub</a>
-        </li>
-        <li>
-          <strong>Web Calculator:</strong> A simple calculator using HTML, CSS & JS.<br/>
-          <a href="#" target="_blank">Live Demo (Coming soon)</a>
-        </li>
-      </ul>
-    </section>
+      <div class="project">
+        <h3>UniSystemCLI</h3>
+        <p>A Python CLI for student course management.</p>
+        <a href="https://github.com/nehamahajann/UniSystemCLI" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Web Calculator</h3>
+        <p>Basic calculator using HTML, CSS, and JS.</p>
+        <a href="#">Live Demo (Coming soon)</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
+  <section id="contact" class="section">
+    <div class="container">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></p>
       <p>GitHub: <a href="https://github.com/nehamahajann" target="_blank">nehamahajann</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn Profile</a></p>
+    </div>
+  </section>
 
-      <p><a href="Neha_Mahajan_Resume.pdf" download class="resume-button">📄 Download My Resume</a></p>
-      <button onclick="toggleTheme()" class="toggle-btn">🌓 Toggle Light/Dark Mode</button>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Neha Mahajan. All rights reserved.</p>
+  <footer class="footer">
+    <p>© 2025 Neha Mahajan</p>
   </footer>
-
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
 
 </body>
 </html>
