@@ -1,18 +1,50 @@
-function toggleTheme() {
-  document.body.classList.toggle("dark-mode");
+// Typed text effect - types and erases words in loop
+const typedElement = document.getElementById('typed');
+
+const words = [
+  'Python Developer',
+  'AI & Machine Learning Enthusiast',
+  'Full-stack Developer',
+  'Software Engineer',
+  'Tech Learner'
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingSpeed = 100;
+let deletingSpeed = 50;
+let pauseBetweenWords = 1500;
+
+function type() {
+  const currentWord = words[wordIndex];
+  if (isDeleting) {
+    // Remove a char
+    typedElement.textContent = currentWord.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      setTimeout(type, 500);
+    } else {
+      setTimeout(type, deletingSpeed);
+    }
+  } else {
+    // Add a char
+    typedElement.textContent = currentWord.substring(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === currentWord.length) {
+      isDeleting = true;
+      setTimeout(type, pauseBetweenWords);
+    } else {
+      setTimeout(type, typingSpeed);
+    }
+  }
 }
 
-// Typed.js effect
-document.addEventListener("DOMContentLoaded", () => {
-  const script = document.createElement("script");
-  script.src = "https://cdn.jsdelivr.net/npm/typed.js@2.0.12";
-  script.onload = () => {
-    new Typed("#typed", {
-      strings: ["Python Developer", "Masters of IT student at UTS", "Web & AI Enthusiast"],
-      typeSpeed: 60,
-      backSpeed: 30,
-      loop: true
-    });
-  };
-  document.body.appendChild(script);
+// Start typing effect after DOM loaded
+window.addEventListener('DOMContentLoaded', () => {
+  if (typedElement) {
+    type();
+  }
 });
