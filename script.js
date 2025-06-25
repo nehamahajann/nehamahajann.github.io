@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   script.src = "https://cdn.jsdelivr.net/npm/typed.js@2.0.12";
   script.onload = () => {
     new Typed("#typed", {
-      strings: ["Python Developer", "Full-Stack Developer", "Tech Enthusiast"],
+      strings: ["Python Developer", "Masters of IT student at UTS", "Web & AI Enthusiast"],
       typeSpeed: 60,
       backSpeed: 30,
       loop: true
