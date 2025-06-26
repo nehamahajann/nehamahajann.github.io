@@ -15,13 +15,15 @@ let typingSpeed = 100;
 let deletingSpeed = 50;
 let pauseBetweenWords = 1500;
 
+
+
 function type() {
   const currentWord = words[wordIndex];
   if (isDeleting) {
     // Remove a char
     typedElement.textContent = currentWord.substring(0, charIndex - 1);
     charIndex--;
-    if (charIndex = 0) {
+    if (charIndex === 0) {
       isDeleting = false;
       wordIndex = (wordIndex + 1) % words.length;
       setTimeout(type, 500);
