@@ -12,6 +12,8 @@ body {
   align-items: center;
 }
 
+
+
 .toggle-btn {
   background: white;
   color: #004b8d;
@@ -124,4 +126,8 @@ a {
 
 .dark-mode footer {
   background-color: #111;
+}
+
+.logo{
+    text-align: center;
 }

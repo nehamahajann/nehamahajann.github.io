@@ -3,9 +3,8 @@ const typedElement = document.getElementById('typed');
 
 const words = [
   'Python Developer',
-  'AI & Machine Learning Enthusiast',
+  'Web & AI Enthusiast',
   'Full-stack Developer',
-  'Software Engineer',
   'Tech Learner'
 ];
 
