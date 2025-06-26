@@ -21,7 +21,7 @@ function type() {
     // Remove a char
     typedElement.textContent = currentWord.substring(0, charIndex - 1);
     charIndex--;
-    if (charIndex === 0) {
+    if (charIndex = 0) {
       isDeleting = false;
       wordIndex = (wordIndex + 1) % words.length;
       setTimeout(type, 500);
