@@ -132,3 +132,43 @@ a {
 .logo{
     text-align: center;
 }
+.hero {
+  background-color: #e6f0ff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: #004b8d;
+  font-weight: bold;
+}
+
+.resume-button {
+  background-color: #004b8d;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #003366;
+}
