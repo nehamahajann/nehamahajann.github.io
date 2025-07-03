@@ -50,3 +50,8 @@ window.addEventListener('DOMContentLoaded', () => {
     type();
   }
 });
+
+function toggleTheme() {
+//   document.body.classList.toggle("dark-mode");
+console.log('In toggleTheme')
+}
